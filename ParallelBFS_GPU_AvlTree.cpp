@@ -225,7 +225,7 @@ string versaoPlataforma;
  kernel1.setArg(6,sizeof(int),&numVert);
  kernel1.setArg(7,sizeof(int),&numAresta);
  kernel1.setArg(8,result_indexB);
- kernel1.setArg(9,ValuesB);                     // JPL
+ kernel1.setArg(9,ValuesB);                      // JPL
  kernel1.setArg(10,sizeof(int),&key_to_find);    //JPL
  kernel2.setArg(0,FaB);
  kernel2.setArg(1,FuaB);
