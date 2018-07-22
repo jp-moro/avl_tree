@@ -560,7 +560,6 @@ int main(int argc, char** argv)
         }
     }
     arquivoSaida.close();
-
     //cout << "\tIndex Encontrado(paralelo): " << result_index << endl;
     //cout << "\tTempo Paralelo getcuptime (total): " << (double)(fim-inicio) << endl;
 
