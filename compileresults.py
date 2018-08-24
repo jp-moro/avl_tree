@@ -26,8 +26,9 @@ def evaluateMean(data, nbElements):
     return dataMean
 
 def flushFile(fileName, dataMean):
-    fileNameOut = fileName[4:-4]
-    fileNameOut += "Media.txt"
+#    fileNameOut = fileName[4:-4]
+#    fileNameOut += "Media.txt"
+    fileNameOut = "MEDIA" + fileName
     fileObject = open(fileNameOut, 'w')
 
     for element in dataMean:
