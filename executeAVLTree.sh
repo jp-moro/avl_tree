@@ -24,7 +24,7 @@ INPUT_BUSCA=$2
 
 #./tree kernelsBFS_AvlTree.c lista03.txt lista01.txt 30
 
-#./tree kernelsBFS_AvlTree.c $INPUT_LISTA $INPUT_BUSCA $REPEAT $3
+./tree kernelsBFS_AvlTree.c $INPUT_LISTA $INPUT_BUSCA $REPEAT $3
 
 python compileresults.py EXECParaleloGPU.txt $REPEAT
 python compileresults.py EXECSequencial.txt $REPEAT

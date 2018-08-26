@@ -552,12 +552,9 @@ int main(int argc, char** argv)
             inicio = getcputime();
             result_index = bfs(G, root_key, key_to_find);
             fim = getcputime();
-
-            tempo_exec = (fim * 1000) - (inicio * 1000);
-            tempo_exec = tempo_exec / 1000;
             
-            arquivoSaida << file_ip_busca[i].ip_str << "::" << tempo_exec << "::" << result_index << endl;
-            //arquivoSaida << file_ip_busca[i].ip_str << "::" << (double)(fim-inicio) << "::" << result_index << endl;
+            //arquivoSaida << file_ip_busca[i].ip_str << "::" << tempo_exec << "::" << result_index << endl;
+            arquivoSaida << file_ip_busca[i].ip_str << "::" << (double)(fim-inicio) << "::" << result_index << endl;
 
             //cout << "\tIndex Encontrado(sequencial): " << result_index << endl;
             //cout << "\tTempo Sequencial getcputime: " << (double)(fim-inicio) << endl << endl;
@@ -573,10 +570,8 @@ int main(int argc, char** argv)
         {
             key_to_find = file_ip_busca[i].ip_int;
             
-            inicio = getcputime();
             result_index = bfs_paralelo(G, root_key, argv[1], &tempo_exec, key_to_find);
-            fim = getcputime();
-            
+                        
             arquivoSaida << file_ip_busca[i].ip_str << "::" << tempo_exec << "::" << result_index << endl;
         }
     }

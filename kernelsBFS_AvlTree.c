@@ -51,7 +51,7 @@ __kernel void kernel_2(__global int* FaB, __global int* FuaB, __global int* XaB,
 			FaB[id] = 1;
 			XaB[id] = 1;
 			FuaB[id] = 0;
-			*fimExecB = 0;
+            *fimExecB = 0;
 		}
 	}
 }
